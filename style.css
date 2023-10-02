@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex.justify-between {
+    justify-content: space-between;
+}
+.flex.justify-around {
+    justify-content: space-around;
+}
+.flex.justify-evenly {
+    justify-content: space-evenly;
+}
+.flex.justify-center {
+    justify-content: center;
+}
+
+
+.align-start{
+    align-items: start;
+}
+.align-end{
+    align-items: end;
+}
+.align-center{
+    align-items: center;
+}
+
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+
+
+#Home {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(117deg,#ceeaf1,#edf8f7 53%,#94c6c4);
+}
+
+body, html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body {
+
+}
+
+
+.nav {
+    padding: 0 40px;
+}
+
+.micLogo {
+    align-items: center;
+    width: 300px;
+    height: 100%;
+}
+
+.menuBarDiv {
+    
+}
+
+.menuBar {
+    list-style-type: none;
+}
+
+.menuBarItem {
+    margin: 0;
+    padding: 20px 5px;
+    cursor: pointer;
+    
+}
+
+.menuBarItem {
+    margin: 5 10px;
+    transition: 0.2s;    
+}
+
+.menuBarItemLink {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px 20px;
+    color: #000;
+    font-size: large;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+
+.menuBarItem:hover {
+    transform: translateY(-4px);
+    border-bottom: 4px solid black;
+}
+
+.mainContent {
+    margin: 0px;
+}
+
+.mainContentLeft {
+    margin-right: 70px;
+}
+
+.mainContentRight {
+    margin-bottom: 20px;
+}
+
+.headingDiv {
+    margin-top: 100px;
+    margin-left: 40px;
+
+}
+
+.heading {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    opacity: 1;
+    font-weight: 650;
+    line-height: 1.3;
+    font-size: 4.5rem;
+    text-shadow: 0 0 8px rgba(0,0,0,.54);
+    margin: 0;
+}
+
+.tagline {
+    margin: 25px 10px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 350;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    
+}
+
+.asBtn {
+    color: #ffffff;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #394aff;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    margin-left: 20px;
+    outline: 0;
+    padding: 0.9rem 2.7vw;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.msImageDiv {
+    transform: translateY(-20px);
+   
+  
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+}
+
+.fadeInRight {
+    animation: fadeInRight 1.5s ease 0s 1 normal none;
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 1.5s ease 0s 1 normal none;
+}
+
+
+
+
+/* Style the button */
+.menuToggleCheckbox {
+    display: none;
+}
+
+.menuToggleLabel {
+    display: inline-block;
+    background-color: #394aff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Style the full-screen menu */
+.fullScreenMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    overflow-y: hidden;
+    transition: 0.3s;
+}
+
+.fullScreenMenu li {
+    margin: 20px 0;
+}
+
+.fullScreenMenu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+
+/* Show the menu when the checkbox is checked */
+.menuToggleCheckbox:checked ~ .fullScreenMenu {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Show the button by default */
+.menuToggleLabel {
+    display: none;
+}
+
+/* Hide the button on screens with a width less than 768px */
+@media (max-width: 900px) {
+    /* Show the checkbox */
+    .menuToggleCheckbox {
+        display: block;
+    }
+}
