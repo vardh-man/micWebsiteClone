@@ -90,7 +90,7 @@ a {
 
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     background: linear-gradient(117deg,#ceeaf1,#edf8f7 53%,#94c6c4);
 }
 
@@ -99,12 +99,14 @@ body, html {
 }
 
 .nav {
+    max-height: 90px;
     padding: 0 40px;
+    max-width: 1500px;
 }
 
 .micLogo {
     align-items: center;
-    width: 300px;
+    max-width: 300px;
     height: 100%;
 }
 
@@ -124,16 +126,18 @@ body, html {
 
 .menuBarItem {
     padding: 20px 5px;
-    cursor: pointer;
-    margin: 5 10px;
-    transition: 0.2s;    
+    cursor: pointer; 
+    margin: 25 15px;
+    transition: 0.4s;   
+    box-sizing: border-box;
 }
 
 .menuBarItemLink {
+    box-sizing: border-box;
     display: flex;
     margin-right: 10px;
     margin-left: 10px;
-    padding: 20px 20px;
+    padding: 20px 15px;
     color: #000;
     font-size: large;
     font-weight: 700;
@@ -172,6 +176,7 @@ body, html {
 }
 
 .tagline {
+    display: block;
     margin: 25px 10px;
     margin-bottom: 40px;
     font-size: 1.2rem;
@@ -186,13 +191,13 @@ body, html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #394aff;
     border: 0;
+    outline: 0;
     border-radius: 40px;
     cursor: pointer;
     display: block;
     font-size: 1.1rem;
     margin: 1rem 0;
-    margin-left: 20px;
-    outline: 0;
+    margin-left: 10px;
     padding: 0.75rem 2.7vw;
     text-align: center;
     white-space: nowrap;
@@ -263,20 +268,23 @@ body, html {
         height: 27rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 15px;
         margin-bottom: 30px;
         font-size: 1.1rem;
     }
     .asBtn {
+        padding: 0.75rem 2.7vw;
         font-size: 1rem;
-        transform: scale(0.9);
-        margin-left: 15px;
+        margin-left: 10px;
     }
 }
 
 
 @media only screen and (max-width: 1200px) {
-    
+    .mainContent{
+        margin-bottom: 17px;
+    }
     .headingDiv {
         margin-top: 85px;
     }
@@ -288,19 +296,22 @@ body, html {
         height: 24rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 15px;
         margin-bottom: 30px;
         font-size: 1rem;
     }
     .asBtn {
-        font-size: 0.9rem;
-        transform: scale(0.9);
-        margin-left: 15px;
+        padding: 0.75rem 2.7vw;
+        font-size: 1rem;
+        margin-left: 10px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    
+    .mainContent{
+        margin-bottom: 65px;
+    }
     .headingDiv {
         margin-top: 85px;
     }
@@ -312,20 +323,23 @@ body, html {
         height: 21rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 15px;
         margin-bottom: 20px;
         font-size: 0.7rem;
     }
     .asBtn {
-        font-size: 0.8rem;
-        transform: scale(0.8);
-        margin-left: 7px;
+        padding: 0.75rem 2.7vw;
+        font-size: 1rem;
+        margin-left: 10px;
     }
 }
 
 @media only screen and (max-width: 920px) {
-
-    .menuBarDivDiv {
+    .mainContent{
+        margin-bottom: 110px;
+    }
+    .menuBarDiv {
         display: none;
     }
 
@@ -344,13 +358,15 @@ body, html {
         height: 19rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 15px;
         margin-bottom: 20px;
         font-size: 0.7rem;
     }
     .asBtn {
-        transform: scale(0.8);
-        margin-left: 12px;
+        padding: 0.75rem 2.7vw;
+        font-size: 0.95rem;
+        margin-left: 10px;
     }
 
     .navbar-menu-div {
@@ -380,13 +396,15 @@ body, html {
         height: 17rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 11px;
         margin-bottom: 15px;
         font-size: 0.7rem;
     }
     .asBtn {
-        transform: scale(0.7);
-        margin-left: 0px;
+        padding: 0.65rem 2.6vw;
+        font-size: 0.85rem;
+        margin-left: 10px;
     }
     .mainContentDiv {
         margin-bottom: 60px;
@@ -415,13 +433,15 @@ body, html {
         height: 24rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 20px;
         margin-bottom: 30px;
         font-size: 1.1rem;
     }
     .asBtn {
-        transform: scale(1.1);
-        margin-left: 20px;
+        padding: 0.55rem 2.5vw;
+        font-size: 0.8rem;
+        margin-left: 10px;
     }
     
     .headingDiv {
@@ -459,13 +479,15 @@ body, html {
         height: 20rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 20px;
         margin-bottom: 30px;
         font-size: 0.8rem;
     }
     .asBtn {
-        transform: scale(1.1);
-        margin-left: 20px;
+        font-size: 0.75rem;
+        padding: 0.55rem 2.5vw;
+        margin-left: 10px;
     }
     
     .headingDiv {
@@ -504,16 +526,15 @@ body, html {
         height: 15rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 0.6rem;
     }
     .asBtn {
-        transform: scale(0.7);
-        margin-left: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1rem;
+        font-size: 0.5rem;
+        padding: 0.45rem 2.7vw;
+        margin-left: 10px;
     }
     
     .headingDiv {
@@ -556,17 +577,17 @@ body, html {
         height: 15rem;
     }
     .tagline {
+        margin-left: 10px;
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 0.6rem;
     }
     .asBtn {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1rem;
-        transform: scale(0.7);
-        margin-left: 5px;
+        font-size: 0.45rem;
+        padding: 0.4rem 2.7vw;
+        margin-left: 10px;
     }
+    
     
     .headingDiv {
         padding: 0;
@@ -609,19 +630,17 @@ body, html {
         height: 12rem;
     }
     .tagline {
-        margin-left: 5px;
+        margin-left: 10px;
         margin-top: 15px;
         margin-bottom: 5px;
         font-size: 0.45rem;
     }
     .asBtn {
-        margin: 0;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 0.8rem;
-        transform: scale(0.5);
-        margin-left: 0px;   
-    }
+        font-size: 0.4rem;
+        padding: 0.45rem 2.7vw;
+        margin-left: 10px;
+    } 
+    
     
     .headingDiv {
         padding: 0;
@@ -629,7 +648,7 @@ body, html {
     }
     .mainContent {
         display: block;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
     }
     .mainContentLeft, .mainContentRight {
         justify-content: center;
