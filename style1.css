@@ -1,0 +1,67 @@
+/* Reset some default styles for list items */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the menu toggle checkbox */
+.menuToggleCheckbox {
+    display: none;
+}
+
+/* Style the menu toggle label (hamburger icon) */
+.menuToggleLabel {
+    display: block;
+    background-color: #394aff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Style the menu container */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide the menu off-canvas */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+}
+
+/* Style the menu items */
+.menu ul {
+    padding: 20px;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Style the close button */
+.menuCloseButton {
+    display: none;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Show the close button when the checkbox is checked */
+.menuToggleCheckbox:checked + .menuToggleLabel + .menu {
+    left: 0;
+}
+
+/* Show the close button when the menu is open */
+.menuToggleCheckbox:checked + .menuToggleLabel + .menu .menuCloseButton {
+    display: block;
+}
