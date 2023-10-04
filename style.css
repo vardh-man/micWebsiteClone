@@ -82,9 +82,9 @@ a {
 }
 
 
-*, :after, :before {
+/* *, :after, :before {
     box-sizing: border-box;
-}
+} */
 
 
 
@@ -130,6 +130,7 @@ body, html {
     padding: 20px 5px;
     cursor: pointer; 
     margin: 25 15px;
+    border-bottom: 4px solid transparent;
     transition: 0.3s;   
     box-sizing: border-box;
 }
